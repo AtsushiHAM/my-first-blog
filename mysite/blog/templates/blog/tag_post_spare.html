@@ -1,11 +1,5 @@
 <!-- blog/tag_post.html -->
 
-{% extends "base.html" %}
-
-{% block title %}「#{{ tag.name }}」の投稿一覧 {% endblock %}
-{% block description %}マイブログです。毎日更新します。{% endblock %}
-
-{% block content %}
 <h1>「#{{ tag.name }}」の投稿一覧</h1>
 <ul>
   {% for post in object_list %}
@@ -19,6 +13,3 @@
   {% endfor %}
 
 </ul>
-{% endblock %}
-
-

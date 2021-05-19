@@ -1,5 +1,10 @@
 <!-- blog/category_list.html -->
+{% extends "base.html" %}
 
+{% block title %}カテゴリ一覧 | 青葉山の猫{% endblock %}
+{% block description %}マイブログです。毎日更新します。{% endblock %}
+
+{% block content %}
 <h1>カテゴリ一覧</h1>
 <ul>
   {% for category in object_list %}
@@ -8,3 +13,5 @@
   <li>カテゴリはありません。</li>
   {% endfor %}
 </ul>
+{% endblock %}
+
